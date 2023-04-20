@@ -6,7 +6,7 @@ http://git.oschina.net/taiping.z.git/image2rosbag_KITTIodometry
 
 ###2. 指定image路径, 生成的bag名,时间戳路径, 然后运行.
 ```
-python img2bag_kitti_odo.py /your directory/KITTI/dataset/sequences/00/image_0 kitti_00_l.bag /your directory/KITTI/dataset/sequences/00/times.txt
+python img2bag_kitti_StereoBag.py ./00 00.bag ./00/times.txt
 ```
 ###3. 查看rosbag,并测试结果
 **查看rosbag**
