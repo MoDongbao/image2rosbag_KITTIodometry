@@ -24,13 +24,5 @@ compression: none [2271/2271 chunks]
 types:       sensor_msgs/Image [060021388200f6f0f447d0fcd9c64743]
 topics:      camera/image_raw   4541 msgs    : sensor_msgs/Image
 ```
-**在ORBSLAM2上测试**
-```
-rosbag play --pause kitti_00_l.bag
-rosrun ORB_SLAM2 Mono Vocabulary/ORBvoc.txt Examples/Monocular/KITTI00-02.yaml 
-```
-注意此处我们已经将rostopic设置为了```camera/image_raw```.
-
-python img2bag_kitti_StereoBag.py /home/jotellybarros/Downloads/dataset/sequences/00/ img2bag_kitti_StereoBag_seq00.rosbag /home/jotellybarros/Downloads/dataset/sequences/00/times.txt
-
+**播放rosbag**
 rosbag play --pause img2bag_kitti_StereoBag_seq00.rosbag 
